@@ -1,4 +1,4 @@
-[# DSA-](https://raw.githubusercontent.com/atanu3000/DSA-/main/doc/dsa.webp)
+DSA-/doc/Data-Structures-Training-2.jpg
 
 dsa day 1
 
