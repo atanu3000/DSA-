@@ -1,4 +1,4 @@
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://raw.githubusercontent.com/atanu3000/DSA-/main/doc/Data-Structures-Training-2.jpg)
 
 
 dsa day 1
