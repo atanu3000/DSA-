@@ -1,4 +1,4 @@
-DSA-/doc/Data-Structures-Training-2.jpg
+(https://github.com/atanu3000/DSA-/blob/main/doc/Data-Structures-Training-2.jpg)
 
 dsa day 1
 
