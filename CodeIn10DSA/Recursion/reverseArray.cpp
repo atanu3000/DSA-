@@ -1,31 +1,43 @@
 #include <iostream>
 using namespace std;
 
-int reverseArray(int array[], int start, int end)
+int reverseArray(int array[],int n, int start, int end)
 {
-    if (start == end)
+	
+    if (start >= end)
     {
-        return 0;
+        for(int i=0; i<n; i++){
+        	cout << array[i] << " ";
+		}
+        cout << endl;
     }
-    int temp = array[start];
-    array[start] = array[end];
-    array[end] = temp;
-    return reverseArray(array, start + 1, end - 1);
+    else{
+        int temp = array[start];
+        array[start] = array[end];
+        array[end] = temp;
+        return reverseArray(array, n, start + 1, end - 1);
+    }
 }
 
 int main()
 {
-    int n;
-    cout << "Enter array size: ";
-    cin >> n;
-    int num[n];
-
-    for (int i = 0; i < n; i++)
+    int t;
+    cout << "test cases: ";
+    cin >> t;
+    while(t--)
     {
-        cin >> num[i];
-    }
+        int n;
+        cout << "Enter array size: ";
+        cin >> n;
+        int num[n];
 
-    reverseArray(num, 0, n - 1);
+        for (int i = 0; i < n; i++)
+        {
+            cin >> num[i];
+        }
+
+        reverseArray(num, n, 0, n - 1);
+    }
 
     return 0;
 }
