@@ -12,3 +12,5 @@
 
 ## Linked list
 - dsa day 13 [linked list creation and traversal]
+
+- dsa day 14 [linked list insertion]
