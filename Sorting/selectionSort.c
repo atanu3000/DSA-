@@ -1,6 +1,6 @@
 #include<stdio.h>
-void bubbleSort(int [], int size);
-void print(int [], int size);
+void selectionSort(int [], int);
+void print(int [], int);
 int a[20];
 int main()
 {
@@ -12,26 +12,24 @@ int main()
     {
         scanf("%d", &a[i]);
     }
-    bubbleSort(a, s);
+    selectionSort(a, s);
     print(a, s);
     return 0;
 }
-void bubbleSort(int arr[], int size)
+void selectionSort(int arr[], int size)
 {
-    for (int i = 1; i < size; i++)
+    for (int i = 0; i < size-1; i++)
     {
-        for (int j = 0; j < size - i; j++)
+        for (int j = i+1; j < size; j++)
         {
-            if (arr[j] > arr[j+1])
+            if (arr[i] > arr[j])
             {
-                int temp = arr[j];
-                arr[j]= arr[j+1];
-                arr[j+1] = temp;
+                int temp = arr[i];
+                arr[i]= arr[j];
+                arr[j] = temp;
             }
         }
-        
     }
-    
 }
 void print(int arr[], int size)
 {
